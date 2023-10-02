@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: hacbs-test-project-iafs
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/quay-or-not-to-quay/nbe-e2e-scry-tenant/integ-app-grbm/hacbs-test-project-iafs@sha256:f8fddf75171792d703d4734fde8ec9637869c02b64ebb2b04f134b72a71bfd13
+        name: hacbs-jvm-build-test-project
+        resources: {}
+status: {}
